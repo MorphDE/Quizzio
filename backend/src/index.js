@@ -11,46 +11,36 @@ const require = createRequire(import.meta.url);
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 
-const CLIENT_ID = '355208940204-sntfqk6pktrm4qm480ie18fnr3biblb1.apps.googleusercontent.com';
-const CLIENT_SECRET = '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';
-const REDIRECT_URL = 'https://developers.google.com/oauthplayground';
-const REFRESH_TOKEN = '1//04RWsFCgphhycCgYIARAAGAQSNwF-L9IrD--5dJ1qRTtXlry1f5fOWdJwMoe_IPCPOTpcOtUPOKnCJRBcq14pl1SGS5270F0FjAU';
+// const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL)
+// oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN })
 
-const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL)
-oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN })
+// async function sendMail() {
+//   try {
+//     const accessToken = await oAuth2Client.getAccessToken()
 
-async function sendMail() {
-  try {
-    const accessToken = await oAuth2Client.getAccessToken()
+//     const transport = nodemailer.createTransport({
+//       service: 'gmail',
+//       auth: {
+//         type: 'OAuth2',
+//         user: 'tobiastischer99@gmail.com',
+//         clientId: CLIENT_ID,
+//         clientSecret: CLIENT_SECRET,
+//         refreshToken: REFRESH_TOKEN,
+//         accessToken: accessToken
+//       }
+//     })
 
-    const transport = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        type: 'OAuth2',
-        user: 'tobiastischer99@gmail.com',
-        clientId: CLIENT_ID,
-        clientSecret: CLIENT_SECRET,
-        refreshToken: REFRESH_TOKEN,
-        accessToken: accessToken
-      }
-    })
+//     const mailOptions = {
+//       from: 'QUIZZIO APP <tobiastischer99@gmail.com>',
+//       to: 'tobiastischer99@gmail.com',
+//       subject: 'Hello from GMAIL using API',
+//       text: 'Hello from QUIZZIO APP',
+//       html: '<h1>Hello from QUIZZIO APP</h1>'
+//     };
 
-    const mailOptions = {
-      from: 'QUIZZIO APP <tobiastischer99@gmail.com>',
-      to: 'tobiastischer99@gmail.com',
-      subject: 'Hello from GMAIL using API',
-      text: 'Hello from QUIZZIO APP',
-      html: '<h1>Hello from QUIZZIO APP</h1>'
-    };
-
-    const result = await transport.sendMail(mailOptions)
-    return result;
-  }
-
-  catch (error) {
-    return error
-  }
-}
+//     const result = await transport.sendMail(mailOptions)
+//     return result;
+//   }
 
 // sendMail().then( result => console.log( 'Email sent...', result ))
 // .catch(error => console.log(error.message));
