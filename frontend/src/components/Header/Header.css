@@ -1,0 +1,33 @@
+.header-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  background-color: var(--bg2);
+  border-radius: 0 0 2rem 2rem;
+  gap: 20vw;
+  z-index: 5;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-title h1 {
+  color: var(--font);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.burger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger {
+  background-color: var(--font);
+  height: 0.3rem;
+  width: 2rem;
+}

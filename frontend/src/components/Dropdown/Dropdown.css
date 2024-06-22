@@ -1,0 +1,57 @@
+.dropdown-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg2);
+}
+
+.dropdown-close {
+  position: absolute;
+  top: -100vh;
+  transition: all 1s ease-in-out;
+}
+
+.dropdown-open {
+  position: absolute;
+  top: 0;
+  transition: all 1s ease-in-out;
+}
+
+.dropdown-title h1 {
+  color: var(--font);
+  text-align: center;
+  margin-bottom: 5vh;
+  padding-top: 5vh;
+  font-size: 2rem;
+}
+
+.dropdown-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vh;
+  margin-bottom: 5vh;
+  padding-top: 15vh;
+  flex-grow: 1;
+}
+
+.dropdown-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: var(--font);
+  background-color: var(--main);
+  width: 85vw;
+  height: 8vh;
+  border-radius: 0.5rem;
+}
+
+.dropdown-logout {
+  color: var(--wrong);
+  margin-bottom: 5vh;
+  font-weight: 600;
+  cursor: pointer;
+}

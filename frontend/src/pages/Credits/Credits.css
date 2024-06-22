@@ -1,0 +1,40 @@
+.credits-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg);
+  height: 100vh;
+}
+
+.credits-content {
+  flex-grow: 1;
+}
+
+.credits-title {
+  text-align: center;
+  color: var(--main);
+  margin-bottom: 3vh;
+}
+
+.credits-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+
+.credits-info {
+  color: var(--font);
+  font-weight: 600;
+  width: 85vw;
+  padding: 1rem;
+}
+
+.madeby {
+  margin-top: 15vh;
+  color: var(--main);
+  font-weight: 600;
+  text-align: center;
+}

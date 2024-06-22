@@ -1,0 +1,25 @@
+.register-box {
+  color: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  border-radius: 0.5rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  gap: 2vh;
+}
+
+.registerform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.lostpw {
+  color: var(--main);
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.custom-notification {
+  position: absolute;
+  bottom: -8vh;
+  border-radius: 0.5rem;
+  width: 80vw;
+  padding: 1vw 1vw;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.notify-success {
+  color: var(--font);
+  background-color: var(--correctbg);
+}
+
+.notify-error {
+  color: var(--font);
+  background-color: var(--wrongbg);
+}
+
+.notify-close {
+  position: absolute;
+  bottom: -8vh;
+  transition: all 1s ease-in-out;
+}
+
+.notify-open {
+  position: absolute;
+  bottom: 20vh;
+  transition: all 1s ease-in-out;
+}
+
+.notify2-close {
+  position: absolute;
+  top: -8vh;
+  transition: all 1s ease-in-out;
+}
+
+.notify2-open {
+  position: absolute;
+  top: 15vh;
+  transition: all 1s ease-in-out;
+}

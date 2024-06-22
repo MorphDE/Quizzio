@@ -1,0 +1,39 @@
+.statistic-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bg);
+  height: 100vh;
+}
+
+.flex-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3.5vh;
+  flex-grow: 1;
+}
+
+.stats-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg2);
+  width: 85vw;
+  height: 8vh;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.stats-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5vw;
+  font-size: 0.9rem;
+  color: var(--font);
+  font-weight: 600;
+}
